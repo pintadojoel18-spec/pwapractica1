@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSoluciones - Empresa de Servicios</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para el Ejercicio 2 para asegurar responsividad */
+        
+        .section-padding {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .price-card,
+        .faq-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+        }
+        
+        .hero {
+            background: #2c3e50;
+            color: white;
+            padding: 100px 20px;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav style="background:#fff; padding:15px; position:sticky; top:0; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+        <a href="index.html">← Volver al Menú</a> |
+        <a href="#inicio">Inicio</a> | <a href="#servicios">Servicios</a> | <a href="#portafolio">Portafolio</a> |
+        <a href="#precios">Precios</a> | <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- 1. Inicio: Presentación -->
+    <header id="inicio" class="hero">
+        <h1>TechSoluciones Ecuador</h1>
+        <p>Innovación en Ingeniería de Sistemas y Producción Multimedia.</p>
+    </header>
+
+    <!-- 2. Descripción de la empresa y Servicios -->
+    <section id="servicios" class="section-padding">
+        <h2>Nuestros Servicios</h2>
+        <p>Ofrecemos soluciones integrales en desarrollo de software, gestión de bases de datos NoSQL y edición de video profesional.</p>
+        <div class="grid-container">
+            <div class="price-card">
+                <h3>Desarrollo Java</h3>
+                <p>Creación de aplicaciones robustas orientadas a objetos.</p>
+            </div>
+            <div class="price-card">
+                <h3>Bases de Datos</h3>
+                <p>Especialistas en Oracle y MongoDB.</p>
+            </div>
+            <div class="price-card">
+                <h3>Edición Multimedia</h3>
+                <p>Post-producción de comerciales y tutoriales en alta calidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Portafolio -->
+    <section id="portafolio" class="section-padding" style="background:#f9f9f9;">
+        <h2>Portafolio</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h4>Comercial "Bicycle Wheels"</h4>
+                <p>Edición profesional de video para la industria deportiva.</p>
+            </div>
+            <div class="card">
+                <h4>Sistema "Refugio del Sol"</h4>
+                <p>Desarrollo de plataforma promocional turística.</p>
+            </div>
+            <div class="card">
+                <h4>Tutorial de Visión Artificial</h4>
+                <p>Producción de contenido educativo técnico.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Testimoniales -->
+    <section class="section-padding">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p><i>"Excelente capacidad técnica en el manejo de integraciones NoSQL y puntualidad en la entrega de proyectos multimedia."</i></p>
+        <p><strong>- Juan Pérez, Director de Proyectos</strong></p>
+    </section>
+
+    <!-- 5. Página de Precios -->
+    <section id="precios" class="section-padding" style="background:#f4f4f4;">
+        <h2>Nuestros Planes</h2>
+        <div class="grid-container">
+            <div class="price-card">
+                <h3>Básico</h3>
+                <p>$199/mes</p>
+                <ul>
+                    <li>Mantenimiento Web</li>
+                    <li>Soporte técnico</li>
+                </ul>
+            </div>
+            <div class="price-card" style="border: 2px solid #3498db;">
+                <h3>Profesional</h3>
+                <p>$499/mes</p>
+                <ul>
+                    <li>Desarrollo de Software</li>
+                    <li>Edición de 2 videos</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Noticias / Blog -->
+    <section class="section-padding">
+        <h2>Últimas Noticias</h2>
+        <article style="max-width:600px; margin:auto; text-align:left;">
+            <h3>Tendencias en Domótica 2026</h3>
+            <p>Exploramos cómo la eficiencia energética está transformando los hogares inteligentes en Ecuador.</p>
+        </article>
+    </section>
+
+    <!-- 7. Recursos y Preguntas Frecuentes (FAQ) -->
+    <section class="section-padding" style="background:#f9f9f9;">
+        <h2>Recursos y FAQ</h2>
+        <div style="max-width:800px; margin:auto; text-align:left;">
+            <div class="faq-item">
+                <strong>¿Trabajan con frameworks modernos?</strong>
+                <p>Sí, utilizamos JavaFX para interfaces y JDBC para conexiones seguras.</p>
+            </div>
+            <div class="faq-item">
+                <strong>¿Dónde puedo descargar guías?</strong>
+                <p>Visita nuestra sección de Tutoriales de Visión Artificial.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Formulario de Contacto e Información -->
+    <section id="contacto" class="section-padding">
+        <h2>Contáctanos</h2>
+        <div style="max-width:500px; margin:auto;">
+            <form action="#">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea rows="5" placeholder="Tu mensaje"></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+        <div style="margin-top:30px;">
+            <p>📍 Dirección: Av. Principal, Guayaquil, Ecuador</p>
+            <p>📞 Teléfono: +593 999 999 999</p>
+            <p>📧 Email: contacto@techsoluciones.ec</p>
+        </div>
+    </section>
+
+    <footer class="section-padding">
+        <p>&copy; 2026 TechSoluciones - Clase Práctica 1 (1).docx</p>
+    </footer>
+
+</body>
+
+</html>
